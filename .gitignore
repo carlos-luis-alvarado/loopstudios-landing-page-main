@@ -16,4 +16,4 @@
 .prettierignore
 *.md
 /design
-/images
+/images/mobile
