@@ -4,11 +4,12 @@
     --white: hsl(0,0%,100%);
     --balck:  hsl(0, 0%, 0%);
     --darkGray:  hsl(0, 0%, 55%);
-    --veryDarkGray: hsl(0, 0%, 41%); 
+    --veryDarkGray: hsl(0, 0%, 41%);
 }
 html{
     box-sizing: border-box;
     font-size: 62.5%;
+
 }
 *,*:before,*:after{
     box-sizing: inherit;
@@ -16,7 +17,7 @@ html{
 body{
     font-family: var(--majorFont);
     font-size: 1.6rem;
-    line-height: 2;
+    line-height: 1;
 }
 
 /*Globales*/
@@ -29,15 +30,71 @@ body{
 
 a{
     text-decoration: none;
+    color: var(--white);
 }
 
 h1,h2,h3{
     font-family: var(--secondaryFont);
     text-transform: uppercase;
+
+}
+h2,h3,p{
+    text-align: center;
+}
+p{
+    color: var(--darkGray);
 }
 h1{
-    font-size: 4.0rem;
+    font-size: 4rem;
+    line-height: 1;
+
 }
 img{
     max-width: 100%;
+}
+
+
+.header{
+    background-image: url(../images/mobile/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 55rem;
+    width: 100%;
+    padding: 1rem;
+}
+.header--titulo{
+    border: 2px solid white;
+    color: white;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem;
+    margin-top: 10rem;
+    /* font-weight: lighter; */
+}
+
+.header--navegacion{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.main{
+    margin-top: 10rem;
+    padding: 1rem;
+}
+
+.footer{
+    background-color: var(--balck);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem;
+}
+.footer--links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
 }
