@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Frontend Mentor | Loopstudios landing page</title>
@@ -16,27 +19,36 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style> -->
 </head>
+
 <body class="">
-  <header class="header container">
+  <header class="header header-balck container">
     <div>
       <div class="header--navegacion">
         <div>
           <img src="./images/logo.svg" alt="">
         </div>
-        <nav class="header--nav">
-          <a class="header--links" href="#">About</a>
-          <a class="header--links" href="#">Careers</a>
-          <a class="header--links" href="#">Events</a>
-          <a class="header--links" href="#">Products</a>
-          <a class="header--links" href="#">Support</a>
-        </nav>
+        <div class="header--botones">
+          <a href="#" class="hamburger">
+            <img src="./images/icon-hamburger.svg" alt="">
+          </a>
+          <a href="#" class="close">
+            <img src="./images/icon-close.svg" alt="">
+          </a>
+        </div>
       </div>
+      <nav class="header--nav">
+        <a class="header--links" href="#">About</a>
+        <a class="header--links" href="#">Careers</a>
+        <a class="header--links" href="#">Events</a>
+        <a class="header--links" href="#">Products</a>
+        <a class="header--links" href="#">Support</a>
+      </nav>
       <div class="header--titulo">
         <h1>Inmersive experiences that deliver</h1>
       </div>
-      
+
     </div>
-   
+
   </header>
 
   <main class="container main">
@@ -47,20 +59,20 @@
       <div>
         <h2>The leader in interactive VR</h2>
         <p>
-          Founded in 2011, Loopstudios has been producing world-class virtual reality 
-          projects for some of the best companies around the globe. Our award-winning 
-          creations have transformed businesses through digital experiences that bind 
+          Founded in 2011, Loopstudios has been producing world-class virtual reality
+          projects for some of the best companies around the globe. Our award-winning
+          creations have transformed businesses through digital experiences that bind
           to their brand.
         </p>
       </div>
-     
+
     </section>
     <section>
       <div>
         <h2>Our creations</h2>
         <a href="images/mobile/image-deep-earth.jpg">See all</a>
       </div>
-      
+
       <article>
         <img src="./images/mobile/image-deep-earth.jpg" alt="image-deep-earth">
         <h3>Deep earth</h3>
@@ -93,9 +105,14 @@
         <img src="./images/mobile/image-fisheye.jpg" alt="image-fisheye">
         <h3>Make it fisheye</h3>
       </article>
+
+      <div class="boton">
+        <a href="#">See all</a>
+      </div>
+
     </section>
   </main>
-  
+
   <footer class="footer">
     <img src="./images/logo.svg" alt="logo">
     <div class="footer--links">
@@ -106,19 +123,19 @@
       <a href="">Support</a>
     </div>
     <div>
-      <img src="./images/icon-facebook.svg" alt="icon-facebook">
-      <img src="./images/icon-twitter.svg" alt="icon-twitter">
-      <img src="./images/icon-pinterest.svg" alt="icon-pinterest">
-      <img src="./images/icon-instagram.svg" alt="icon-pinterest">
+      <img class="logos" src="./images/icon-facebook.svg" alt="icon-facebook">
+      <img class="logos" src="./images/icon-twitter.svg" alt="icon-twitter">
+      <img class="logos" src="./images/icon-pinterest.svg" alt="icon-pinterest">
+      <img class="logos" src="./images/icon-instagram.svg" alt="icon-pinterest">
     </div>
     <p>
       © 2021 Loopstudios. All rights reserved.
     </p>
   </footer>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+ 
+
+  <script src="js/main.js"></script>
 </body>
+
 </html>
