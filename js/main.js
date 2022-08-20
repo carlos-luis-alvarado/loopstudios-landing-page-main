@@ -40,3 +40,45 @@ cerrar.addEventListener('click',e=>{
     nav.style.display="none";
     titulo.style.display="block";
 })
+
+
+
+let body = document.querySelector('body');
+body.onresize=()=>{
+    let imagenes = document.querySelectorAll('.imagenes');
+    let ancho = document.documentElement.clientWidth;
+    if(ancho>750){
+        console.log('Nuevas Imagenes');
+        
+        console.log(imagenes);
+        imagenes.forEach(e=>{
+            // console.log(e.src);
+            e.src = e.src.replace('mobile','desktop')
+        })
+    }else{
+        imagenes.forEach(e=>{
+            // console.log(e.src);
+            e.src = e.src.replace('desktop','mobile')
+        })
+    }
+
+}
+
+document.addEventListener('DOMContentLoaded',()=>{
+    let imagenes = document.querySelectorAll('.imagenes');
+    let ancho = document.documentElement.clientWidth;
+    if(ancho>750){
+        console.log('Nuevas Imagenes');
+        
+        console.log(imagenes);
+        imagenes.forEach(e=>{
+            // console.log(e.src);
+            e.src = e.src.replace('mobile','desktop')
+        })
+    }else{
+        imagenes.forEach(e=>{
+            // console.log(e.src);
+            e.src = e.src.replace('desktop','mobile')
+        })
+    }
+})

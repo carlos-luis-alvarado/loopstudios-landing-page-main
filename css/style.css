@@ -139,12 +139,7 @@ img{
     align-items: center;
     gap: 3rem;
 }
-article{
-    border: 1px solid red;
-    position: relative;
-    margin: 3rem 0;
 
-}
 h3{
     position: absolute;
     z-index: 1;
@@ -157,4 +152,33 @@ h3{
 
 .logos{
     margin: 5px;
+}
+
+article{
+    border: 1px solid red;
+    position: relative;
+    margin: 3rem 0;
+
+}
+
+@media (min-width: 750px) {
+    .section-noticias{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 1rem;
+        
+    }
+    .our-creations{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .boton{
+        grid-row: 1;
+        grid-column-start: 3;
+        grid-column-end: 5;
+        margin-top: 0;
+
+    }
+
+ 
 }
