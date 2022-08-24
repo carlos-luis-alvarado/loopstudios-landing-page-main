@@ -21,20 +21,18 @@
 </head>
 
 <body class="">
-  <header class="header header-balck container">
-    <div>
-      <div class="header--navegacion">
-        <div>
-          <img src="./images/logo.svg" alt="">
-        </div>
-        <div class="header--botones">
-          <a href="#" class="hamburger">
-            <img src="./images/icon-hamburger.svg" alt="">
-          </a>
-          <a href="#" class="close">
-            <img src="./images/icon-close.svg" alt="">
-          </a>
-        </div>
+  <header class="header header-balck ">
+    <div class="container header--navegacion">
+      <div>
+        <img src="./images/logo.svg" alt="">
+      </div>
+      <div class="header--botones">
+        <a href="#" class="hamburger">
+          <img src="./images/icon-hamburger.svg" alt="">
+        </a>
+        <a href="#" class="close">
+          <img src="./images/icon-close.svg" alt="">
+        </a>
       </div>
       <nav class="header--nav">
         <a class="header--links" href="#">About</a>
@@ -43,20 +41,30 @@
         <a class="header--links" href="#">Products</a>
         <a class="header--links" href="#">Support</a>
       </nav>
-      <div class="header--titulo">
-        <h1>Inmersive experiences that deliver</h1>
-      </div>
-
     </div>
+    <!-- <nav class="header--nav">
+      <a class="header--links" href="#">About</a>
+      <a class="header--links" href="#">Careers</a>
+      <a class="header--links" href="#">Events</a>
+      <a class="header--links" href="#">Products</a>
+      <a class="header--links" href="#">Support</a>
+    </nav> -->
+   
+    
+    <div class="header--titulo container">
+      <h1>Inmersive experiences that deliver</h1>
+    </div>
+
+
 
   </header>
 
   <main class="container main">
-    <section class="">
+    <section class="pos--absolute">
       <div>
         <img class="imagenes" src="./images/desktop/image-interactive.jpg" alt="image-interactive">
       </div>
-      <div>
+      <div class="pos--relative">
         <h2>The leader in interactive VR</h2>
         <p>
           Founded in 2011, Loopstudios has been producing world-class virtual reality
@@ -67,7 +75,7 @@
       </div>
 
     </section>
-  
+
     <section class="section-noticias">
       <div class="our-creations">
         <h2>Our creations</h2>
@@ -75,11 +83,11 @@
       </div>
 
       <article id="primero">
-        <img class="imagenes"  src="./images/mobile/image-deep-earth.jpg" alt="image-deep-earth">
+        <img class="imagenes" src="./images/mobile/image-deep-earth.jpg" alt="image-deep-earth">
         <h3>Deep earth</h3>
       </article>
       <article id="segundo">
-        <img class="imagenes"  src="./images/mobile/image-night-arcade.jpg" alt="image-night-arcade">
+        <img class="imagenes" src="./images/mobile/image-night-arcade.jpg" alt="image-night-arcade">
         <h3>Night arcade</h3>
       </article>
       <article>

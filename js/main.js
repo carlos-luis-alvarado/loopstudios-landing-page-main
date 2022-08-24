@@ -8,77 +8,85 @@ const nav = document.querySelector('.header--nav');
 console.log(nav);
 const header_botones = document.querySelector('.header--botones');
 
-hamburger.addEventListener('click',e=>{
-    e.preventDefault();
- 
- 
- 
-    // console.log(head.classList())
-    // header.classList[0].
-    header.classList.remove('header');
-    header.classList.add('header-black')
- 
-    titulo.style.display="none";
-    // const headerblack = document.querySelector('.header-black');
-    // headerblack.style.display = "block"
-    // header.classList.add(headerblack)
-    nav.style.display="flex"
-    let img = hamburger.children
-    // console.log(img);
-    // img.src.remove = 'images/icon-hamburger.svg'
-    hamburger.style.display="none"
- 
-    cerrar.style.display="block"
- 
-})
-cerrar.addEventListener('click',e=>{
-    e.preventDefault();
-    cerrar.style.display='none';
-    header.classList.remove('header-black')
-    header.classList.add('header');
-    hamburger.style.display="block"
-    nav.style.display="none";
-    titulo.style.display="block";
-})
+// hamburger.addEventListener('click', e => {
+//     e.preventDefault();
+
+
+//     // console.log(head.classList())
+//     // header.classList[0].
+//     header.classList.remove('header');
+//     header.classList.add('header-black')
+
+//     titulo.style.display = "none";
+//     // const headerblack = document.querySelector('.header-black');
+//     // headerblack.style.display = "block"
+//     // header.classList.add(headerblack)
+//     nav.style.display = "flex"
+//     let img = hamburger.children
+//     // console.log(img);
+//     // img.src.remove = 'images/icon-hamburger.svg'
+//     hamburger.style.display = "none"
+
+//     cerrar.style.display = "block"
 
 
 
-let body = document.querySelector('body');
-body.onresize=()=>{
-    let imagenes = document.querySelectorAll('.imagenes');
-    let ancho = document.documentElement.clientWidth;
-    if(ancho>750){
-        console.log('Nuevas Imagenes');
-        
-        console.log(imagenes);
-        imagenes.forEach(e=>{
-            // console.log(e.src);
-            e.src = e.src.replace('mobile','desktop')
-        })
-    }else{
-        imagenes.forEach(e=>{
-            // console.log(e.src);
-            e.src = e.src.replace('desktop','mobile')
-        })
-    }
 
-}
+// })
+// cerrar.addEventListener('click', e => {
+//     e.preventDefault();
+//     cerrar.style.display = 'none';
+//     header.classList.remove('header-black')
+//     header.classList.add('header');
+//     hamburger.style.display = "block"
+//     nav.style.display = "none";
+//     titulo.style.display = "block";
+//     let ancho = document.documentElement.clientWidth;
 
-document.addEventListener('DOMContentLoaded',()=>{
-    let imagenes = document.querySelectorAll('.imagenes');
-    let ancho = document.documentElement.clientWidth;
-    if(ancho>750){
-        console.log('Nuevas Imagenes');
-        
-        console.log(imagenes);
-        imagenes.forEach(e=>{
-            // console.log(e.src);
-            e.src = e.src.replace('mobile','desktop')
-        })
-    }else{
-        imagenes.forEach(e=>{
-            // console.log(e.src);
-            e.src = e.src.replace('desktop','mobile')
-        })
-    }
-})
+
+// })
+
+
+
+// let body = document.querySelector('body');
+// body.onresize = () => {
+//     let imagenes = document.querySelectorAll('.imagenes');
+//     let ancho = document.documentElement.clientWidth;
+//     if (ancho > 750) {
+//         console.log('Nuevas Imagenes');
+
+//         console.log(imagenes);
+//         imagenes.forEach(e => {
+//             // console.log(e.src);
+//             e.src = e.src.replace('mobile', 'desktop')
+//         })
+//     } else {
+//         imagenes.forEach(e => {
+//             // console.log(e.src);
+//             e.src = e.src.replace('desktop', 'mobile')
+//         })
+//     }
+
+// }
+
+// document.addEventListener('DOMContentLoaded', () => {
+//     let imagenes = document.querySelectorAll('.imagenes');
+//     const nav = document.querySelector('.header--nav');
+//     let ancho = document.documentElement.clientWidth;
+//     if (ancho > 750) {
+//         console.log('Nuevas Imagenes');
+
+//         console.log(imagenes);
+//         imagenes.forEach(e => {
+//             // console.log(e.src);
+//             e.src = e.src.replace('mobile', 'desktop')
+//             nav.style.display = "block";
+//         })
+//     } else {
+//         imagenes.forEach(e => {
+//             // console.log(e.src);
+//             e.src = e.src.replace('desktop', 'mobile')
+//             nav.style.display = "none";
+//         })
+//     }
+// })
