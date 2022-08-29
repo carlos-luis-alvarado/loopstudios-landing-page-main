@@ -45,29 +45,47 @@ const header_botones = document.querySelector('.header--botones');
 
 
 // })
+let tipo = (document.documentElement.clientHeight>750)?'mobile':'desktop';
+let ancho = document.documentElement.clientWidth;
+let body = document.querySelector('body');
+async function obtenerImagen(imagenes,texto){
+    try {
+        for(let i=0;imagenes.length;i++){
+            const response = await fetch(`../images/${texto}/${imagenes[i].alt}.jpg`)
+            const resp = await response.blob()
+            console.log(resp);
+            imagenes[i].src = URL.createObjectURL(resp)
+        }
+    } catch (error) {
+        console.log(error);   
+    }
+}
 
+const determinarTamanio= ()=>{
+    let imagenes = document.querySelectorAll('.imagenes');
+    console.log(imagenes);
+    ancho = document.documentElement.clientWidth;
+    
+    if ((ancho > 750) && (tipo!=='desktop')) {
+       console.log(tipo);
+       obtenerImagen(imagenes,'desktop')
+       tipo='desktop'
+    } else {
+       if((ancho <= 750) && (tipo!=='mobile')){
+           console.log(tipo);
+           obtenerImagen(imagenes,'mobile')
+           tipo='mobile'
+       }
+   }
+}
 
+ body.onresize = () => {
+    determinarTamanio()
+ }
 
-// let body = document.querySelector('body');
-// body.onresize = () => {
-//     let imagenes = document.querySelectorAll('.imagenes');
-//     let ancho = document.documentElement.clientWidth;
-//     if (ancho > 750) {
-//         console.log('Nuevas Imagenes');
-
-//         console.log(imagenes);
-//         imagenes.forEach(e => {
-//             // console.log(e.src);
-//             e.src = e.src.replace('mobile', 'desktop')
-//         })
-//     } else {
-//         imagenes.forEach(e => {
-//             // console.log(e.src);
-//             e.src = e.src.replace('desktop', 'mobile')
-//         })
-//     }
-
-// }
+document.addEventListener('DOMContentLoaded',()=>{
+    determinarTamanio()
+})
 
 // document.addEventListener('DOMContentLoaded', () => {
 //     let imagenes = document.querySelectorAll('.imagenes');
@@ -90,3 +108,5 @@ const header_botones = document.querySelector('.header--botones');
 //         })
 //     }
 // })
+
+

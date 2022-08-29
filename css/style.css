@@ -223,15 +223,17 @@ article {
 
 .pos--absolute {
     position: relative;
-    margin-bottom: 15rem;
+    margin-bottom: 5rem;
 }
 
 .pos--relative {
-    position: absolute;
+    position: relative;
 
 }
-
 @media (min-width: 750px) {
+    .pos--absolute{
+        margin-bottom: 15rem;
+    }
     .pos--relative {
         position: absolute;
         height: 50%;
@@ -244,6 +246,7 @@ article {
     }
 
 }
+
 
 @media (min-width: 750px) {
     .section-noticias {
