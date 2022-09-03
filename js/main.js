@@ -26,8 +26,9 @@ const header_botones = document.querySelector('.header--botones');
      nav.style.display = "none";
      titulo.style.display = "block";
  })
-let tipo = (document.documentElement.clientHeight > 768) ? 'mobile' : 'desktop';
+
 let ancho = document.documentElement.clientWidth;
+let tipo = (ancho >= 768) ? 'mobile' : 'desktop';
 let body = document.querySelector('body');
 async function obtenerImagen(imagenes, texto) {
     try {
